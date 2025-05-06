@@ -103,7 +103,7 @@
 /* MESSAGE HOVER GRADIENT */
 /* BY DOM IN VENCORD SERVER */
 .message__5126c:hover {
-    background: linear-gradient(to right, rgba(var(--gradient-color1), 0.5) rgba(var(--gradient-color2). 0.5);
+    background: linear-gradient(to right, rgba(var(--gradient-color1), 0.5) rgba(var(--gradient-color2). 0.5));
 }
 
 /* RESTORES SERVER ICONS TO BEING CIRCULAR */
