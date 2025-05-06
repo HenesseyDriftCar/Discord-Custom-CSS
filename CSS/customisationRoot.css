@@ -1,0 +1,141 @@
+
+/* SETTINGS */
+:root {
+    /* ACCENT COLORS */
+    --main-color: rgba(39, 128, 230, 1);
+    --hover-color: rgb(119, 174, 236);
+    --success-color: hsl(106, 100%, 50%);
+    --danger-color: hsl(0, 75%, 46%);
+  
+  
+    /* STATUS COLORS */
+    --online-color: hsl(106, 100%, 50%);
+    --idle-color: hsl(41, 100%, 50%);
+    --dnd-color: hsl(0, 75%, 46%);
+    --streaming-color: hsl(278, 100%, 43%);
+    --offline-color: #000000;
+  
+  
+    /* APP BACKGROUND */
+    --background-shading-percent: 0%;
+    --background-image: url(https://i.imgur.com/j8kTHGI.png);
+    --background-attachment: fixed;
+    --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  
+  
+    /* USER POPOUT BACKGROUND */
+    --user-popout-image: var(--background-image);
+    --user-popout-attachment: var(--background-attachment);
+    --user-popout-filter: var(--background-filter);
+  
+  
+    /* USER MODAL BACKGROUND */
+    --user-modal-image: var(--background-image);
+    --user-modal-attachment: var(--background-attachment);
+    --user-modal-filter: var(--background-filter);
+  
+  
+    /* HOME ICON */
+    --home-icon: url(https://i.pinimg.com/originals/13/34/fd/1334fd5e90dd4f05919b25c76e3fa7e0.gif);
+  
+  
+    /* FONTS */
+    --main-font: "Inter", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+  
+  
+    /* GRADIENT */
+    --gradient-color1: rgb(39, 128, 230); /* primary color [default: var(--main-color)] */
+    --gradient-color2: rgb(119, 174, 236); /* secondary color [default: var(--hover-color)] */
+    --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
+    --gradient-color1-alpha: rgba(39, 128, 230, 0.5);
+    --gradient-color2-alpha: rgba(119, 174, 236, 0.5);
+  
+    /* BORDER */
+    --border-1px: 1px solid rgba(119, 174, 236, 0.5);
+    --border-2px: 2px solid rgba(119, 174, 236, 0.5); 
+  
+    /* RADIAL STATUS */
+    --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
+  
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
+  
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+  
+    --rs-online-color: hsl(123, 100%, 44%); /* Colour for online status */
+    --rs-idle-color: hsl(41, 100%, 50%); /* Colour for idle status */
+    --rs-dnd-color: hsl(0, 75%, 46%); /* Colour for dnd status */
+    --rs-offline-color: #000000; /* Colour for offline status */
+    --rs-streaming-color: hsl(278, 100%, 43%); /* Colour for streaming status */
+    --rs-invisible-color: #000000; /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  
+    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  
+  
+    /* SERVERCOLUMNS */
+    --columns:		1;				/* default: 3	(amount of servercolumns)						*/
+    --guildsize:		70;				/* default: 50	(serversize in pixel)							*/
+    --guildgap:		5;				/* default: 3	(top/bottom gap between servers in pixel)				*/
+    --aligndms:		1;				/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)			*/
+  
+  
+    /* HORIZONTAL SERVERLIST */  
+    --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
+    --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */	  
+  
+  
+    /* SETTINGS MODAL */
+    --settingswidth: 	960;			/* default:	960px			(width of the settings modal, px)												*/
+    --settingsheight: 	80;			/* default:	80vh			(height of the settings modal, vh)												*/
+    --settingsbackground: 	transparent;		/* default:	transparent		(lowest BG Color of changed Windows, change it in case another Theme turns them transparent)					*/
+  }
+  
+  /* THEME SPECIFIC SHADING */
+  /* LIGHT THEME */
+  :is(.theme-light, .theme-dark .theme-light) {
+    --background-shading: rgba(252, 252, 252, 0.3);
+    --card-shading: rgba(252, 252, 252, 0.3);
+    --popout-shading: rgba(252, 252, 252, 0.7);
+    --modal-shading: rgba(252, 252, 252, 0.5);
+    --input-shading: rgba(0, 0, 0, 0.3);
+    --normal-text: #36363c;
+    --muted-text: #75757e;
+  }
+  
+  /* ASH THEME */
+  :is(.theme-dark, .theme-light .theme-dark) {
+    --background-shading: rgba(0, 0, 0, 0.6);
+    --card-shading: rgba(0, 0, 0, 0.5);
+    --popout-shading: rgba(0, 0, 0, 0.6);
+    --modal-shading: rgba(0, 0, 0, 0.5);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #d8d8db;
+    --muted-text: #aeaeb4;
+  }
+  
+  /* DARK THEME */
+  :is(.theme-darker, .theme-light .theme-darker) {
+    --background-shading: rgba(0, 0, 0, 0.75);
+    --card-shading: rgba(0, 0, 0, 0.3);
+    --popout-shading: rgba(0, 0, 0, 0.7);
+    --modal-shading: rgba(0, 0, 0, 0.5);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #fbfbfb;
+    --muted-text: #94949c;
+  }
+  
+  /* ONYX THEME */
+  :is(.theme-midnight, .theme-light .theme-midnight) {
+    --background-shading: rgba(0, 0, 0, 0.8);
+    --card-shading: rgba(0, 0, 0, 0.4);
+    --popout-shading: rgba(0, 0, 0, 0.8);
+    --modal-shading: rgba(0, 0, 0, 0.6);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #dcdcde;
+    --muted-text: #86868e;
+  }
