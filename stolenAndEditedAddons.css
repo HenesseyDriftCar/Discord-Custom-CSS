@@ -1,0 +1,45 @@
+/* USER PANEL */
+/* Transparent user panel */
+.visual-refresh .panels_c48ade {
+  background: rgba(0,0,0,0.6) !important;
+  backdrop-filter: var(--card-shading) !important;
+  border-radius: 0px;
+  border-top: var(--border-1px);
+  border-right: var(--border-1px);
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Activity panel border */
+.visual-refresh .panel__5dec7 {
+  border-bottom: var(--border-1px);
+}
+
+/* Voice chat panel border */
+.wrapper_e131a9 {
+  border-bottom: 1px solid rgba(119, 174, 236, 0);
+}
+
+/* Voice chat button */
+.visual-refresh .button_e131a9.buttonColor_e131a9.buttonColor_e131a9 {
+  background: rgba(255, 255, 255, 0.089);
+}
+
+/* In voice chat streaming button */
+.visual-refresh .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
+  background: hsl(from var(--success-color) h s l / 0.4);
+  color: var(--button-secondary-text);
+  border-color: hsl(from var(--success-color) h s l / 0.5);
+}
+
+/* Username in chat */
+.username_c19a55 {
+    font-weight: 900;
+}
+
+/* Usernames in servers */
+.username__5d473 {
+  font-size: 15px;
+  font-weight: 600;
+}
