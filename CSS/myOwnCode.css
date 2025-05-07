@@ -105,3 +105,10 @@
 .wrapper_e131a9 {
   border-bottom: 1px solid rgba(119, 174, 236, 0);
 }
+
+/* CHANGE DISCORD INBUILT BORDER COLOURS */
+:is(.theme-light,.theme-dark,.theme-darker,.theme-midnight), :is(.theme-light,.theme-dark,.theme-darker,.theme-midnight):is(.theme-light,.theme-dark) {
+  --border-faint: rgba(119, 174, 236, 0.5);
+  --border-strong: rgba(119, 174, 236, 0.5);
+  --border-subtle: rgba(119, 174, 236, 0.5)
+}
