@@ -26,7 +26,7 @@
 
 /* CUSTOMISE PANEL DARKNESS AND BORDERS */
 
-/* MAIN CHAT AREA */
+/* MAIN CHAT AREA 
 .visual-refresh .page_c48ade {
     background: rgba(0,0,0,0.3);
     border-radius: 0px;
@@ -34,29 +34,29 @@
     border-top: var(--border-1px) !important;
 }
 
-/* WINDOWS TOP BAR */
+/* WINDOWS TOP BAR 
 .title_c38106 {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0px rgba(0, 0, 0, 0);
   height: 2.9vh;
 }
 
-/* MEMBER LIST */
+/* MEMBER LIST 
 .visual-refresh .container_c8ffbb {
   border-left: var(--border-2px) !important;
 }
 
-/* TOP OF CHAT AREA + MEMBER LIST */
+/* TOP OF CHAT AREA + MEMBER LIST 
 .content_f75fb0 {
   border-top: var(--border-2px) !important;
 }
 
-/* USER PROFILE POPOUT IN DMS */
+/* USER PROFILE POPOUT IN DMS 
 .outer_c0bea0 {
   border-left: var(--border-2px) !important
 }
 
-/* FRIENDS PAGE */
+/* FRIENDS PAGE 
 .nowPlayingColumn__133bf {
   border-left: var(--border-2px) !important;
   border-top: var(--border-2px) !important;
@@ -66,7 +66,7 @@
   border-top: var(--border-2px) !important;
 }
 
-/* DMS AND SERVER CHANNELS PANEL */
+/* DMS AND SERVER CHANNELS PANEL 
 .visual-refresh .sidebarList_c48ade {
   background: rgba(0,0,0,0.6);
   border-top: var(--border-1px)  !important;
@@ -75,7 +75,7 @@
   border-radius:0;
 }
 
-/* SERVER LIST */
+/* SERVER LIST 
 .visual-refresh .guilds_c48ade {
   background: rgba(0,0,0,0.2);
   border-radius: 0px;
@@ -84,7 +84,7 @@
 }
 
 /* USER PANEL */
-/* Transparent user panel */
+/* Transparent user panel 
 .visual-refresh .panels_c48ade {
   background: rgba(0,0,0,0.6) !important;
   backdrop-filter: var(--card-shading) !important;
@@ -96,12 +96,12 @@
   padding-right: 5px;
 }
 
-/* Activity panel border */
+/* Activity panel border 
 .visual-refresh .panel__5dec7 {
   border-bottom: var(--border-1px);
 }
 
-/* Voice chat panel border */
+/* Voice chat panel border 
 .wrapper_e131a9 {
   border-bottom: 1px solid rgba(119, 174, 236, 0);
 }
