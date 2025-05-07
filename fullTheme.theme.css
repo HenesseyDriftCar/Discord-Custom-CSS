@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalSnippets.css");
+/*@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalSnippets.css");
 @import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalAndEditedAddons.css");
-@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/myOwnCode.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/myOwnCode.css");*/
 @import url("https://clearvision.github.io/Addons/gradients.css"); 
 @import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
 @import url("https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css");
@@ -59,8 +59,8 @@
     --gradient-color1: rgb(39, 128, 230); /* primary color [default: var(--main-color)] */
     --gradient-color2: rgb(119, 174, 236); /* secondary color [default: var(--hover-color)] */
     --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
-    --gradient-color1-alpha: rgba(39, 128, 230, 0.5);
-    --gradient-color2-alpha: rgba(119, 174, 236, 0.5);
+    --gradient-color1-alpha: rgba(39, 128, 230, 0.35);
+    --gradient-color2-alpha: rgba(119, 174, 236, 0.35);
   
     /* BORDER */
     --border-1px: 1px solid rgba(119, 174, 236, 0.5);
