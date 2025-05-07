@@ -1,3 +1,14 @@
+/**
+ * @name ClearVision - Henessey Mix
+ * @author HenesseyDriftCar
+ * @version 1.0.0
+ * @description Clearvision, with extra CSS thrown in to my personal taste
+ * @source https://github.com/HenesseyDriftCar/Discord-Custom-CSS
+ * @website https://henesseydriftcar.github.io/Discord-Custom-CSS/
+ */
+
+/* IMPORT */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
