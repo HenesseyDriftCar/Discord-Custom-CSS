@@ -17,11 +17,6 @@
   border-bottom: var(--border-1px);
 }
 
-/* Voice chat panel border */
-.wrapper_e131a9 {
-  border-bottom: 1px solid rgba(119, 174, 236, 0);
-}
-
 /* Voice chat button */
 .visual-refresh .button_e131a9.buttonColor_e131a9.buttonColor_e131a9 {
   background: rgba(255, 255, 255, 0.089);
