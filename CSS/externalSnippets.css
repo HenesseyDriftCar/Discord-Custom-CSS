@@ -153,3 +153,37 @@
 .theme-light .hiddenVisually__27f77[aria-expanded="false"] {
     background-color: #747474;
 }
+
+
+/* SUPER CLEAN USER PANEL */
+/* BY DUNESCIFYE IN CLEARVISION SERVER */
+/* Readjusting size of the user profile panel at the bottom left */
+.guilds_c48ade {
+  --custom-app-panels-height: 0px !important;
+}
+/* Makes vc buttons stay visible when it's super scaled down */
+.lookFilled__201d5 .contents__201d5 {
+  overflow: visible;
+}
+/* Removes the background of vc buttons */
+.visual-refresh .button_e131a9.buttonColor_e131a9 {
+  background: none;
+}
+/* Makes various vc and profile buttons closer together to save space */
+.visual-refresh button.button__67645 {
+  margin: 0;
+}
+/* Makes the Noise Supression and Disconnect buttons vertically aligned */
+.horizontal__7c0ba>.flex__7c0ba:last-child {
+  flex-direction: column !important;
+  margin-left: 0;
+  gap: 0;
+}
+/* Make the whole box smaller and fit more */
+.visual-refresh .container_e131a9 {
+  gap: 0;
+  margin: 0;
+}
+.container_e131a9 {
+  padding: 0;
+}
