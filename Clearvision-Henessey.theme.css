@@ -40,7 +40,7 @@
   
     /* APP BACKGROUND */
     --background-shading-percent: 0%;
-    --background-image: url(https://i.imgur.com/j8kTHGI.png);
+    --background-image: url(https://i.imgur.com/VYsAr09.jpeg);
     --background-attachment: fixed;
     --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
   
@@ -73,9 +73,9 @@
     --gradient-color1-alpha: rgba(39, 128, 230, 0.35);
     --gradient-color2-alpha: rgba(119, 174, 236, 0.35);
   
-    /* BORDER */
-    --border-1px: 1px solid rgba(119, 174, 236, 0.5);
-    --border-2px: 2px solid rgba(119, 174, 236, 0.5); 
+    /* BORDER 
+    --border-1px: 1px solid rgba(167, 167, 167, 0.5);
+    --border-2px: 2px solid rgba(167, 167, 167, 0.5); */
 
     /* TEXTAREA HIGHLIGHT COLOUR */
     --textarea-highlight: rgb(255, 255, 255);
@@ -104,7 +104,7 @@
   
     /* SERVERCOLUMNS */
     --columns:		1;				/* default: 3	(amount of servercolumns)						*/
-    --guildsize:		70;				/* default: 50	(serversize in pixel)							*/
+    --guildsize:	70;				/* default: 50	(serversize in pixel)							*/
     --guildgap:		5;				/* default: 3	(top/bottom gap between servers in pixel)				*/
     --aligndms:		1;				/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)			*/
   
@@ -116,8 +116,8 @@
   
     /* SETTINGS MODAL */
     --settingswidth: 	960;			/* default:	960px			(width of the settings modal, px)												*/
-    --settingsheight: 	80;			/* default:	80vh			(height of the settings modal, vh)												*/
-    --settingsbackground: 	transparent;		/* default:	transparent		(lowest BG Color of changed Windows, change it in case another Theme turns them transparent)					*/
+    --settingsheight: 80;			/* default:	80vh			(height of the settings modal, vh)												*/
+    --settingsbackground: transparent;		/* default:	transparent		(lowest BG Color of changed Windows, change it in case another Theme turns them transparent)					*/
   }
   
   /* THEME SPECIFIC SHADING */

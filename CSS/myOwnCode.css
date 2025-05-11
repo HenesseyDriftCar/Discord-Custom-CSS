@@ -26,89 +26,94 @@
 
 /* CUSTOMISE PANEL DARKNESS AND BORDERS */
 
-/* MAIN CHAT AREA */
-.visual-refresh .page_c48ade {
-    background: rgba(0,0,0,0.3);
-    border-radius: 0px;
-    border-left: var(--border-1px)  !important;
-    border-top: var(--border-1px) !important;
-}
 
-/* WINDOWS TOP BAR */
-.title_c38106 {
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-  height: 2.9vh;
-}
-
-/* MEMBER LIST */
-.visual-refresh .container_c8ffbb {
-  border-left: var(--border-1px) !important;
-}
-
-/* TOP OF CHAT AREA + MEMBER LIST */
-.content_f75fb0 {
-  border-top: var(--border-1px) !important;
-}
-
-/* USER PROFILE POPOUT IN DMS */
-.outer_c0bea0 {
-  border-left: var(--border-1px) !important
-}
-
-/* FRIENDS PAGE */
-.nowPlayingColumn__133bf {
-  border-left: var(--border-1px) !important;
-  border-top: var(--border-1px) !important;
-}
-
-.visual-refresh .tabBody_133bf {
-  border-top: var(--border-1px) !important;
+/* SERVER LIST */
+.visual-refresh .guilds_c48ade {
+  background: rgba(0,0,0,0.25);
+  border-radius: 0px;
 }
 
 /* DMS AND SERVER CHANNELS PANEL */
 .visual-refresh .sidebarList_c48ade {
-  background: rgba(0,0,0,0.6);
-  border-top: var(--border-1px)  !important;
-  border-bottom: var(--border-1px)  !important;
-  border-right: var(--border-1px)  !important;
+  background: rgba(0,0,0,0.4);
   border-radius:0;
 }
 
-/* SERVER LIST */
-.visual-refresh .guilds_c48ade {
-  background: rgba(0,0,0,0.2);
-  border-radius: 0px;
-  border-bottom: var(--border-1px) !important;
-  border-left: var(--border-1px) !important;
-}
-
 /* USER PANEL */
-/* Transparent user panel 
+/* Transparent user panel */
 .visual-refresh .panels_c48ade {
-  background: rgba(0,0,0,0.6) !important;
+  background: rgba(0,0,0,0.7) !important;
   backdrop-filter: var(--card-shading) !important;
   border-radius: 0px;
-  border-top: var(--border-1px);
-  border-right: var(--border-1px);
+  border: none;
   padding: 0px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* Activity panel border 
+/* Activity panel border */
 .visual-refresh .panel__5dec7 {
-  border-bottom: var(--border-1px);
+  border-bottom: none;
 }
 
-/* Voice chat panel border 
+/* Voice chat panel border */
 .wrapper_e131a9 {
-  border-bottom: 1px solid rgba(119, 174, 236, 0);
+  border-bottom: none;
+}
+
+/* MAIN CHAT AREA */
+.visual-refresh .page_c48ade {
+    background: rgba(0,0,0,0);
+    border-radius: 0px;
+}
+
+/* EXTRA PANEL AT TOP OF CHAT AREA */
+.container__9293f {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* MEMBER LIST */
+.visual-refresh .container_c8ffbb {
+  background: rgba(0, 0, 0, 0.4)
+}
+
+/* USER PROFILE POPOUT IN DMS */
+.outer_c0bea0 {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* FRIENDS PAGE ACTIVITY PANEL */
+.nowPlayingColumn__133bf {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* WINDOWS TOP BAR */
+.title_c38106 {
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  height: 22px;
 }
 
 /* CHANGE DISCORD INBUILT BORDER COLOURS */
 :is(.theme-light,.theme-dark,.theme-darker,.theme-midnight), :is(.theme-light,.theme-dark,.theme-darker,.theme-midnight):is(.theme-light,.theme-dark) {
-  --border-faint: rgba(119, 174, 236, 0.5);
-  --border-strong: rgba(119, 174, 236, 0.5);
-  --border-subtle: rgba(119, 174, 236, 0.5)
+  --border-faint: rgba(167, 167, 167, 0);
+  --border-strong: rgba(167, 167, 167, 0);
+  --border-subtle: rgba(167, 167, 167, 0);
+}
+
+
+
+/* HOME ICON SELECTED AND UNREAD DM INDICATOR BROKEN WITH HORIZONTAL SERVER LIST */
+.wrapper_ef3116 .pill__1f388, .wrapper_ef3116 .pill__66ac8, .wrapper_ef3116 .pill_ed9a5f {
+  display: none;
+}
+
+/* REMOVE CLEARVISION WATERMARK */
+.leading_c38106::before, .leading_c38106::after {
+  display: none;
+}
+
+/* REMOVE TOP BAR LOCATION INDICATOR */
+.visual-refresh .title__85643 {
+  display: none;
 }
