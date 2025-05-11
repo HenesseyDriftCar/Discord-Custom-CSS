@@ -1,7 +1,7 @@
 /**
  * @name ClearVision-Henessey
  * @author HenesseyDriftCar
- * @version 1.0.1
+ * @version 1.1.0
  * @description Clearvision, with extra CSS thrown in to my personal taste
  * @source https://github.com/HenesseyDriftCar/Discord-Custom-CSS
  * @website https://henesseydriftcar.github.io/Discord-Custom-CSS/
@@ -103,10 +103,10 @@
   
   
     /* SERVERCOLUMNS */
-    --columns:		1;				/* default: 3	(amount of servercolumns)						*/
-    --guildsize:	70;				/* default: 50	(serversize in pixel)							*/
-    --guildgap:		5;				/* default: 3	(top/bottom gap between servers in pixel)				*/
-    --aligndms:		1;				/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)			*/
+    --columns:		1;	/* default: 3	(amount of servercolumns) */
+    --guildsize:	70;	/* default: 50	(serversize in pixel) */
+    --guildgap:		5;	/* default: 3	(top/bottom gap between servers in pixel) */
+    --aligndms:		1;	/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)	*/
   
   
     /* HORIZONTAL SERVERLIST */  
@@ -115,9 +115,9 @@
   
   
     /* SETTINGS MODAL */
-    --settingswidth: 	960;			/* default:	960px			(width of the settings modal, px)												*/
-    --settingsheight: 80;			/* default:	80vh			(height of the settings modal, vh)												*/
-    --settingsbackground: transparent;		/* default:	transparent		(lowest BG Color of changed Windows, change it in case another Theme turns them transparent)					*/
+    --settingswidth: 960;   /* default:	960px (width of the settings modal, px)	*/
+    --settingsheight: 80;	/* default:	80vh (height of the settings modal, vh)	*/
+    --settingsbackground: transparent;  /* default:	transparent	lowest BG Color of changed Windows, change it in case another Theme turns them transparent)	*/
   }
   
   /* THEME SPECIFIC SHADING */
