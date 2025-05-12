@@ -55,7 +55,17 @@
     --user-modal-image: var(--background-image);
     --user-modal-attachment: var(--background-attachment);
     --user-modal-filter: var(--background-filter);
-  
+
+    /* PANEL TRANSPARENCY */
+    --server-darkness: 0.25;
+    --channels-darkness: 0.4;
+    --userpanel-darkness: 0.7;
+    --chat-darkness: 0;
+    --chat-topbar-darkness: 0.4;
+    --memberlist-darkness: 0.4;
+    --profile-darkness: 0.2;
+    --activity-darkness: 0.2;
+    --topbar-darkness: 0.25;
   
     /* HOME ICON */
     --home-icon: url(https://i.pinimg.com/originals/13/34/fd/1334fd5e90dd4f05919b25c76e3fa7e0.gif);

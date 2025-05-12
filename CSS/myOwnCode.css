@@ -29,20 +29,20 @@
 
 /* SERVER LIST */
 .visual-refresh .guilds_c48ade {
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, var(--server-darkness));
   border-radius: 0px;
 }
 
 /* DMS AND SERVER CHANNELS PANEL */
 .visual-refresh .sidebarList_c48ade {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, var(--channels-darkness));
   border-radius:0;
 }
 
 /* USER PANEL */
 /* Transparent user panel */
 .visual-refresh .panels_c48ade {
-  background: rgba(0,0,0,0.7) !important;
+  background: rgba(0, 0, 0, var(--userpanel-darkness)) !important;
   backdrop-filter: var(--card-shading) !important;
   border-radius: 0px;
   border: none;
@@ -63,33 +63,33 @@
 
 /* MAIN CHAT AREA */
 .visual-refresh .page_c48ade {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, var(--chat-darkness));
     border-radius: 0px;
 }
 
 /* EXTRA PANEL AT TOP OF CHAT AREA */
 .container__9293f {
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, var(--chat-topbar-darkness)) !important;
 }
 
 /* MEMBER LIST */
 .visual-refresh .container_c8ffbb {
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, var(--memberlist-darkness))
 }
 
 /* USER PROFILE POPOUT IN DMS */
 .outer_c0bea0 {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, var(--profile-darkness)) !important;
 }
 
 /* FRIENDS PAGE ACTIVITY PANEL */
 .nowPlayingColumn__133bf {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, var(--activity-darkness));
 }
 
 /* WINDOWS TOP BAR */
 .title_c38106 {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, var(--topbar-darkness));
   box-shadow: 0 0 0px rgba(0, 0, 0, 0);
   height: 22px;
 }
