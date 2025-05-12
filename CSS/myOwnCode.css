@@ -17,12 +17,12 @@
   border: 2px solid var(--gradient-color2);
 }
 
-/* GRADIENT SELECTED DMS AND SERVER CHANNELS */
+/* GRADIENT SELECTED DMS AND SERVER CHANNELS 
 .privateChannels__35e86 .channel__972a0 .interactive__972a0.interactiveSelected__972a0:before,
 .wrapper__2ea32.modeSelected__2ea32 {
   background: linear-gradient(130deg, var(--gradient-color1), var(--gradient-color2)) !important;
   border-radius: 5px;
-}
+}*/
 
 /* CUSTOMISE PANEL DARKNESS AND BORDERS */
 
@@ -67,9 +67,9 @@
     border-radius: 0px;
 }
 
-/* EXTRA PANEL AT TOP OF CHAT AREA */
+/* CHANNEL BAR */
 .container__9293f {
-  background: rgba(0, 0, 0, var(--chat-topbar-darkness)) !important;
+  background: rgba(0, 0, 0, var(--channelbar-darkness)) !important;
 }
 
 /* MEMBER LIST */
@@ -101,8 +101,6 @@
   --border-subtle: rgba(167, 167, 167, 0);
 }
 
-
-
 /* HOME ICON SELECTED AND UNREAD DM INDICATOR BROKEN WITH HORIZONTAL SERVER LIST */
 .wrapper_ef3116 .pill__1f388, .wrapper_ef3116 .pill__66ac8, .wrapper_ef3116 .pill_ed9a5f {
   display: none;
@@ -116,4 +114,9 @@
 /* REMOVE TOP BAR LOCATION INDICATOR */
 .visual-refresh .title__85643 {
   display: none;
+}
+
+/* MAKE DIVIDER BETWEEN DMS AND SERVERS + DMS LIST AND BUTTONS MORE VISIBLE */
+.visual-refresh .sectionDivider__35e86, .wrapper_ef3116 .guildSeparator__252b6 {
+  background: rgba(255, 255, 255, 0.5);
 }

@@ -1,7 +1,7 @@
 /**
  * @name ClearVision-Henessey
  * @author HenesseyDriftCar
- * @version 1.1.0
+ * @version 1.2.0
  * @description Clearvision, with extra CSS thrown in to my personal taste
  * @source https://github.com/HenesseyDriftCar/Discord-Custom-CSS
  * @website https://henesseydriftcar.github.io/Discord-Custom-CSS/
@@ -15,7 +15,7 @@
 @import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalSnippets.css");
 @import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalAndEditedAddons.css");
 @import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/myOwnCode.css");
-@import url("https://clearvision.github.io/Addons/gradients.css"); 
+/*@import url("https://clearvision.github.io/Addons/gradients.css"); */
 @import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
 @import url("https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css");
@@ -24,8 +24,8 @@
 /* SETTINGS */
 :root {
     /* ACCENT COLORS */
-    --main-color: rgba(39, 128, 230, 1);
-    --hover-color: rgb(119, 174, 236);
+    --main-color: rgba(39, 128, 230);
+    --hover-color: rgb(30, 98, 175);
     --success-color: hsl(106, 100%, 50%);
     --danger-color: hsl(0, 75%, 46%);
   
@@ -56,19 +56,36 @@
     --user-modal-attachment: var(--background-attachment);
     --user-modal-filter: var(--background-filter);
 
+
     /* PANEL TRANSPARENCY */
-    --server-darkness: 0.25;
-    --channels-darkness: 0.4;
-    --userpanel-darkness: 0.7;
-    --chat-darkness: 0;
-    --chat-topbar-darkness: 0.4;
-    --memberlist-darkness: 0.4;
-    --profile-darkness: 0.2;
-    --activity-darkness: 0.2;
-    --topbar-darkness: 0.25;
+    --server-darkness: 0.25; /* Server list transparency */
+    --channels-darkness: 0.4; /* Channels and DMs transparency */
+    --userpanel-darkness: 0.7; /* User panel transparency */
+    --chat-darkness: 0; /* Chat panel transparency */
+    --channelbar-darkness: 0.4;/* Channel bar transparency */
+    --memberlist-darkness: 0.4; /* Member list transparency */
+    --profile-darkness: 0.2; /* Profile popout in DMs transparency */
+    --activity-darkness: 0.2; /* Activity column on friends page transparency */
+    --topbar-darkness: 0.25; /* Top bar transparency */
+
   
     /* HOME ICON */
     --home-icon: url(https://i.pinimg.com/originals/13/34/fd/1334fd5e90dd4f05919b25c76e3fa7e0.gif);
+    --home-size: cover; /* home button icon size (px) [default:cover] */
+
+
+    /* CHANNEL COLORS */
+    --channel-normal: var(--interactive-normal); /* channel text color [default: var(--interactive-normal)] */
+    --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+    --channel-hover: var(--interactive-hover); /* hovered channel text color [default: var(--interactive-hover)] */
+    --channel-selected: var(--interactive-active); /* selected channel text color [default: var(--interactive-active)] */
+    --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+    --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+    --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+    
+    
+    /* ACCESSIBILITY */
+    --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
   
   
     /* FONTS */
