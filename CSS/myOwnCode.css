@@ -67,6 +67,11 @@
     border-radius: 0px;
 }
 
+/* FRIENDS PAGE */
+.visual-refresh .peopleColumn__133bf {
+    background: rgba(0, 0, 0, var(--friends-darkness));
+}
+
 /* CHANNEL BAR */
 .container__9293f {
   background: rgba(0, 0, 0, var(--channelbar-darkness)) !important;

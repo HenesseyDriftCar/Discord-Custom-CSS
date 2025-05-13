@@ -28,52 +28,39 @@
     --hover-color: rgb(30, 98, 175);
     --success-color: hsl(106, 100%, 50%);
     --danger-color: hsl(0, 75%, 46%);
-  
-  
     /* STATUS COLORS */
     --online-color: hsl(106, 100%, 50%);
     --idle-color: hsl(41, 100%, 50%);
     --dnd-color: hsl(0, 75%, 46%);
     --streaming-color: hsl(278, 100%, 43%);
     --offline-color: #000000;
-  
-  
     /* APP BACKGROUND */
     --background-shading-percent: 0%;
     --background-image: url(https://i.imgur.com/VYsAr09.jpeg);
     --background-attachment: fixed;
     --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
-  
-  
     /* USER POPOUT BACKGROUND */
     --user-popout-image: var(--background-image);
     --user-popout-attachment: var(--background-attachment);
     --user-popout-filter: var(--background-filter);
-  
-  
     /* USER MODAL BACKGROUND */
     --user-modal-image: var(--background-image);
     --user-modal-attachment: var(--background-attachment);
     --user-modal-filter: var(--background-filter);
-
-
     /* PANEL TRANSPARENCY */
     --server-darkness: 0.25; /* Server list transparency */
     --channels-darkness: 0.4; /* Channels and DMs transparency */
     --userpanel-darkness: 0.7; /* User panel transparency */
     --chat-darkness: 0; /* Chat panel transparency */
+    --friends-darkness: 0.2; /* Friends page darkness - seperately customisable to make statuses more readable */
     --channelbar-darkness: 0.4;/* Channel bar transparency */
     --memberlist-darkness: 0.4; /* Member list transparency */
     --profile-darkness: 0.2; /* Profile popout in DMs transparency */
-    --activity-darkness: 0.2; /* Activity column on friends page transparency */
+    --activity-darkness: 0.3; /* Activity column on friends page transparency */
     --topbar-darkness: 0.25; /* Top bar transparency */
-
-  
     /* HOME ICON */
     --home-icon: url(https://i.pinimg.com/originals/13/34/fd/1334fd5e90dd4f05919b25c76e3fa7e0.gif);
     --home-size: cover; /* home button icon size (px) [default:cover] */
-
-
     /* CHANNEL COLORS */
     --channel-normal: var(--interactive-normal); /* channel text color [default: var(--interactive-normal)] */
     --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
@@ -82,42 +69,27 @@
     --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
     --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
     --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
-    
-    
     /* ACCESSIBILITY */
     --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
-  
-  
     /* FONTS */
     --main-font: "Inter", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
-  
-  
     /* GRADIENT */
     --gradient-color1: rgb(39, 128, 230); /* primary color [default: var(--main-color)] */
     --gradient-color2: rgb(119, 174, 236); /* secondary color [default: var(--hover-color)] */
     --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
     --gradient-color1-alpha: rgba(39, 128, 230, 0.35);
     --gradient-color2-alpha: rgba(119, 174, 236, 0.35);
-  
-    /* BORDER 
-    --border-1px: 1px solid rgba(167, 167, 167, 0.5);
-    --border-2px: 2px solid rgba(167, 167, 167, 0.5); */
-
-    /* TEXTAREA HIGHLIGHT COLOUR */
+    /* TEXTAREA */
     --textarea-highlight: rgb(255, 255, 255);
-  
     /* RADIAL STATUS */
     --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
     --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
     --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
-  
     --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
     --rs-medium-width: 2px; /* Thickness of status border for User popout | MUST end in px */
     --rs-large-width: 2px; /* Thickness of status border for User profile | MUST end in px */
-  
     --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-  
     --rs-online-color: hsl(123, 100%, 44%); /* Colour for online status */
     --rs-idle-color: hsl(41, 100%, 50%); /* Colour for idle status */
     --rs-dnd-color: hsl(0, 75%, 46%); /* Colour for dnd status */
@@ -125,22 +97,15 @@
     --rs-streaming-color: hsl(278, 100%, 43%); /* Colour for streaming status */
     --rs-invisible-color: #000000; /* Colour for invisible status - Note: this will only show for your own invisibility */
     --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-  
     --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
-  
-  
     /* SERVERCOLUMNS */
     --columns:		1;	/* default: 3	(amount of servercolumns) */
     --guildsize:	70;	/* default: 50	(serversize in pixel) */
     --guildgap:		5;	/* default: 3	(top/bottom gap between servers in pixel) */
     --aligndms:		1;	/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)	*/
-  
-  
     /* HORIZONTAL SERVERLIST */  
     --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
     --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */	  
-  
-  
     /* SETTINGS MODAL */
     --settingswidth: 960;   /* default:	960px (width of the settings modal, px)	*/
     --settingsheight: 80;	/* default:	80vh (height of the settings modal, vh)	*/
@@ -161,10 +126,10 @@
   
   /* ASH THEME */
   :is(.theme-dark, .theme-light .theme-dark) {
-    --background-shading: rgba(0, 0, 0, 0.6);
-    --card-shading: rgba(0, 0, 0, 0.5);
-    --popout-shading: rgba(0, 0, 0, 0.6);
-    --modal-shading: rgba(0, 0, 0, 0.5);
+    --background-shading: rgba(0, 0, 0, 0.3);
+    --card-shading: rgba(0, 0, 0, 0.3);
+    --popout-shading: rgba(0, 0, 0, 0.3);
+    --modal-shading: rgba(0, 0, 0, 0.3);
     --input-shading: rgba(255, 255, 255, 0.05);
     --normal-text: #d8d8db;
     --muted-text: #aeaeb4;

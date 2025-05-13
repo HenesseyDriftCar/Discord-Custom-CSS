@@ -317,10 +317,47 @@ span[class*="timestampInline_"] {
     transition: var(--list-item-transition);
 }
 
+/* New Voice Chat Version  // BY AKI IN CLEARVISION SERVER */
+.content__07f91:has(.usernameSpeaking__07f91, .avatarSpeaking__07f91) {
+    background: linear-gradient(to right, var(--hover-color), #4a91e200);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: background 1s ease, box-shadow 0.05s ease;
+}
+
+.usernameSpeaking__07f91 {
+    font-weight: 550;
+}
+
+.avatarSpeaking__07f91 {
+    box-shadow: none;
+}
 
 
-/* MAKE DIVIDER BETWEEN DMS AND SERVERS + DMS LIST AND BUTTONS MORE VISIBLE */
+/* Remove all except friends // BY AKI IN CLEARVISION SERVER */
+:where(.visual-refresh) .channel__972a0:not(.dm__972a0) .link__972a0:not([href="/channels/@me"]):not([href="/message-requests"]) {
+    display: none;
+}
 
-.visual-refresh .sectionDivider__35e86, .wrapper_ef3116 .guildSeparator__252b6 {
-  background: rgba(255, 255, 255, 0.5);
+/* ANIMATED DM AND CHANNEL HOVER // BY REFACT0R IN VENCORD SERVER */
+
+:root {
+    --list-item-transition: 0.2s ease;
+}
+.wrapper__2ea32 .link__2ea32, .channel__972a0 {
+    transition: margin-left var(--list-item-transition);
+}
+
+.wrapper__2ea32:hover .link__2ea32, .channel__972a0:hover {
+  margin-left: 17px;
+}
+
+.unread__2ea32 {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    transition: var(--list-item-transition);
 }
