@@ -38,7 +38,7 @@
     --background-shading-percent: 0%;
     --background-image: url(https://i.imgur.com/VYsAr09.jpeg);
     --background-attachment: fixed;
-    --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+    --background-filter: blur(1px);
     /* USER POPOUT BACKGROUND */
     --user-popout-image: var(--background-image);
     --user-popout-attachment: var(--background-attachment);
@@ -51,7 +51,7 @@
     --server-darkness: 0.25; /* Server list transparency */
     --channels-darkness: 0.4; /* Channels and DMs transparency */
     --userpanel-darkness: 0.7; /* User panel transparency */
-    --chat-darkness: 0; /* Chat panel transparency */
+    --chat-darkness: 0.1; /* Chat panel transparency */
     --friends-darkness: 0.2; /* Friends page darkness - seperately customisable to make statuses more readable */
     --channelbar-darkness: 0.4;/* Channel bar transparency */
     --memberlist-darkness: 0.4; /* Member list transparency */
@@ -126,7 +126,7 @@
   
   /* ASH THEME */
   :is(.theme-dark, .theme-light .theme-dark) {
-    --background-shading: rgba(0, 0, 0, 0.3);
+    --background-shading: rgba(0, 0, 0, 0.1);
     --card-shading: rgba(0, 0, 0, 0.3);
     --popout-shading: rgba(0, 0, 0, 0.3);
     --modal-shading: rgba(0, 0, 0, 0.3);
