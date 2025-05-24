@@ -1,0 +1,1 @@
+I made this as a bare bones theme download and import resource for myself, if you use it cool but I'm not putting effort into a readme for other people

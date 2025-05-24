@@ -2,29 +2,31 @@
  * @name ClearVision-Henessey-Personal
  * @author HenesseyDriftCar
  * @version 1.0.0
- * @description Clearvision, with extra CSS thrown in to my personal taste
+ * @description Clearvision, with extra CSS thrown in to my personal taste (Vencord version)
  * @source https://github.com/HenesseyDriftCar/Discord-Custom-CSS
  * @website https://henesseydriftcar.github.io/Discord-Custom-CSS/
- */
+*/
 
 /* IMPORT */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
-@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
-@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalSnippets.css");
-@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/externalAndEditedAddons.css");
-@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/CSS/myOwnCode.css");
-@import url("https://clearvision.github.io/Addons/gradients.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
 @import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
 @import url("https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css");
+/*@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css");*/
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Panels.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Selections_Highlights.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Animations.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Fancy_Extras.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Small_Tweaks.css");
+@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/No_Searchbar.css");
+/*@import url("https://henesseydriftcar.github.io/Discord-Custom-CSS/Overhaul/Friends_Only.css");*/
 
 /* SETTINGS */
 :root {
     /* ACCENT COLORS */
-    --main-color: rgba(39, 128, 230);
+    --main-color: rgb(39, 128, 230);
     --hover-color: rgb(30, 98, 175);
     --success-color: hsl(106, 100%, 50%);
     --danger-color: hsl(0, 75%, 46%);
@@ -36,11 +38,11 @@
     --offline-color: #000000;
     /* APP BACKGROUND */
     --background-shading-percent: 0%;
-    --background-image: url(https://i.imgur.com/VYsAr09.jpeg);
+    --background-image: url(https://i.imgur.com/dZY9dI6.jpeg);
     --background-attachment: fixed;
-    --background-filter: blur(1px);
+    --background-filter: blur(2px);
     /* USER POPOUT BACKGROUND */
-    --user-popout-image: var(--background-image);
+    --user-popout-image: url(https://i.imgur.com/IjeWmZX.jpeg);
     --user-popout-attachment: var(--background-attachment);
     --user-popout-filter: var(--background-filter);
     /* USER MODAL BACKGROUND */
@@ -48,18 +50,19 @@
     --user-modal-attachment: var(--background-attachment);
     --user-modal-filter: var(--background-filter);
     /* PANEL TRANSPARENCY */
-    --server-darkness: 0.25; /* Server list transparency */
-    --channels-darkness: 0.4; /* Channels and DMs transparency */
-    --userpanel-darkness: 0.7; /* User panel transparency */
-    --chat-darkness: 0.1; /* Chat panel transparency */
-    --friends-darkness: 0.2; /* Friends page darkness - seperately customisable to make statuses more readable */
-    --channelbar-darkness: 0.4;/* Channel bar transparency */
-    --memberlist-darkness: 0.4; /* Member list transparency */
-    --profile-darkness: 0.2; /* Profile popout in DMs transparency */
-    --activity-darkness: 0.3; /* Activity column on friends page transparency */
-    --topbar-darkness: 0.25; /* Top bar transparency */
+    --server-darkness: rgba(0, 0, 0, 0.5); /* Server list transparency */
+    --channels-darkness: rgba(0, 0, 0, 0.4); /* Channels and DMs transparency */
+    --userpanel-darkness: rgba(0, 0, 0, 0.7); /* User panel transparency */
+    --chat-darkness: rgba(0, 0, 0, 0.1); /* Chat panel transparency */
+    --memberlist-darkness: rgba(0, 0, 0, 0.3); /* Member list transparency */
+    --profile-darkness: rgba(0, 0, 0, 0.3); /* Profile popout in DMs transparency */
+    --textarea-darkness: rgba(0, 0, 0, 0.5); /* Transparency of typing area */
+    --activity-darkness: rgba(0, 0, 0, 0.3); /* Activity column on friends page transparency */
+    --friendsbar-darkness: rgba(0, 0, 0, 0.4); /* Darkness of the bar at the top of friends page */
+    --chatbar-darkness: rgba(0, 0, 0, 0.4); /* Darkness of the bar at the top of the chat area */
+    --topbar-darkness: rgba(0, 0, 0, 0.6); /* Top bar transparency */
     /* HOME ICON */
-    --home-icon: url(https://i.pinimg.com/originals/13/34/fd/1334fd5e90dd4f05919b25c76e3fa7e0.gif);
+    --home-icon: url(https://i.imgur.com/jTuagxP.png); /* Change to the image link of your choice of home icon */
     --home-size: cover; /* home button icon size (px) [default:cover] */
     /* CHANNEL COLORS */
     --channel-normal: var(--interactive-normal); /* channel text color [default: var(--interactive-normal)] */
@@ -74,14 +77,10 @@
     /* FONTS */
     --main-font: "Inter", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
-    /* GRADIENT */
-    --gradient-color1: rgb(39, 128, 230); /* primary color [default: var(--main-color)] */
-    --gradient-color2: rgb(119, 174, 236); /* secondary color [default: var(--hover-color)] */
-    --gradient-direction: 130deg; /* angle of gradient [default: 130deg] */
-    --gradient-color1-alpha: rgba(39, 128, 230, 0.35);
-    --gradient-color2-alpha: rgba(119, 174, 236, 0.35);
     /* TEXTAREA */
-    --textarea-highlight: rgb(255, 255, 255);
+    --textarea-highlight: rgb(255, 255, 255); /* Set to none to disable */
+    /* PANEL BORDER */
+    --border: 1px solid rgba(0, 0, 0, 1); /* The border between panels. Change to none or change alpha to 0 to remove */
     /* RADIAL STATUS */
     --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
     --rs-medium-spacing: 0px; /* Gap between avatar and status for User popout | MUST end in px */
@@ -101,13 +100,13 @@
     /* SERVERCOLUMNS */
     --columns:		1;	/* default: 3	(amount of servercolumns) */
     --guildsize:	70;	/* default: 50	(serversize in pixel) */
-    --guildgap:		5;	/* default: 3	(top/bottom gap between servers in pixel) */
+    --guildgap:		3;	/* default: 3	(top/bottom gap between servers in pixel) */
     --aligndms:		1;	/* default: 0	(should DMs be aligned in columns: 0 = no, 1 = yes)	*/
     /* HORIZONTAL SERVERLIST */  
     --HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
     --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */	  
     /* SETTINGS MODAL */
-    --settingswidth: 960;   /* default:	960px (width of the settings modal, px)	*/
+    --settingswidth: 960; /* default:	960px (width of the settings modal, px)	*/
     --settingsheight: 80;	/* default:	80vh (height of the settings modal, vh)	*/
     --settingsbackground: transparent;  /* default:	transparent	lowest BG Color of changed Windows, change it in case another Theme turns them transparent)	*/
   }
@@ -127,8 +126,8 @@
   /* ASH THEME */
   :is(.theme-dark, .theme-light .theme-dark) {
     --background-shading: rgba(0, 0, 0, 0.1);
-    --card-shading: rgba(0, 0, 0, 0.3);
-    --popout-shading: rgba(0, 0, 0, 0.3);
+    --card-shading: rgba(0, 0, 0, 0.1);
+    --popout-shading: rgba(0, 0, 0, 0.1);
     --modal-shading: rgba(0, 0, 0, 0.3);
     --input-shading: rgba(255, 255, 255, 0.05);
     --normal-text: #d8d8db;

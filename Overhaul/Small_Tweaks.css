@@ -1,0 +1,84 @@
+/* Better typing area */
+.typing_b88801 {
+  top: calc(0px - var(--space-24));
+  left: 0 !important;
+  padding-left: var(--space-16);
+  background: none;
+}
+
+.visual-refresh .channelTextArea__74017 {
+  border: 2px solid var(--gradient-color1);
+  background: var(--textarea-darkness);
+  margin-bottom: var(--space-xs);
+  border-radius: 30px;
+}
+
+/* Home icon selected and unread DM indicator broken with server columns (why do you need them anyway??) */
+.wrapper_ef3116 .pill__1f388, .wrapper_ef3116 .pill__66ac8, .wrapper_ef3116 .pill_ed9a5f {
+  display: none;
+}
+
+/* Restores serverlist icons to being circular */
+/* BY UNKNOWN IN UNKNOWN */
+.wrapper__6e9f8 {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* --------------------- In chat --------------------- */
+
+/* Link text */
+/* .markup__75297 .anchor_edefb8 {
+ color: black;
+ }  */
+
+/* SPOILER */
+.spoilerContent__54ab5,
+.spoilerMarkdownContent__54ab5,
+.hidden__54ab5 {
+    background: rgba(0, 0, 0, 1) !important;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Edit timestamp */
+.messageContent_c19a55 .timestamp_c19a55 time:after {
+    content: " (" attr(aria-label) ")";
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.messageContent_c19a55 .timestamp_c19a55 span {
+    display: none;
+}
+
+/* Inline code `` `` */
+.visual-refresh .markup__75297 code.inline {
+    background: rgba(0, 0, 0, 1);
+}
+
+/* Username in chat */
+.username_c19a55,
+.markup__75297 strong {
+    font-weight: 900;
+}
+
+/* Date Time divider in chat */
+.content__908e2 {
+    color: var(--main-color);
+}
+
+/* Divider for new chat */
+.unreadPill__908e2,
+.divider__908e2:has(.unreadPill__908e2) {
+    background-color: var(--main-color);
+}
+
+/* Server Invite link display */
+.guildInviteContainer__083ae {
+    background: var(--card-shading);
+}
+
+.footerContent__083ae {
+    background: none;
+}

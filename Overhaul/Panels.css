@@ -1,0 +1,213 @@
+/* --------------------- Windows Top Bar --------------------- */
+
+.title_c38106 {
+  background: var(--topbar-darkness);
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: var(--border);
+}
+
+/* --------------------- Server List --------------------- */
+
+.visual-refresh .guilds_c48ade {
+    border-radius: 0;
+    background: var(--server-darkness);
+    border-left: var(--border) !important;
+}
+
+/* --------------------- Channel and DM Area --------------------- */
+
+.visual-refresh .sidebarList_c48ade {
+    border-radius: 0;
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+/* Channels list + Server name above it*/
+.visual-refresh .container__2637a {
+    background: var(--channels-darkness);
+}
+
+/* DM background dim */
+.visual-refresh .privateChannels__35e86 {
+    background: var(--channels-darkness);
+}
+
+/* --------------------- User Panel --------------------- */
+
+/* Old User Panel for Single Column */
+/* Position of User Panel base on UI density */
+/* Compact */
+.density-compact .panels_c48ade {
+    left: auto !important;
+    right: 0;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px) !important;
+}
+
+/* Default */
+.density-default .panels_c48ade {
+    left: auto !important;
+    right: 0;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px) !important;
+}
+
+/* Spacious */
+.density-cozy .panels_c48ade {
+    left: auto !important;
+    right: 0;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 2px) !important;
+}
+
+/* USER PANEL */
+/* Transparent user panel */
+.visual-refresh .panels_c48ade {
+    background: var(--userpanel-darkness) !important;
+    backdrop-filter: none !important;
+    border-radius: 0;
+    border-right: var(--border);
+    border-left: var(--border);
+    border-top: var(--border);
+    padding: 0;
+    padding-top: 6px;
+}
+
+/* Server panel appear behind user panel */
+nav.guilds_c48ade {
+    margin-bottom: 0 !important;
+}
+
+.guilds_c48ade {
+    --custom-app-panels-height: 0px !important;
+}
+
+/* Activity panel border */
+.visual-refresh .panel__5dec7 {
+    border-bottom: none;
+}
+
+/* ------------------------ VOICE CHAT ------------------------ */
+
+/* Voice chat panel border */
+.panels_c48ade:not(:has(.container__4bbc6)) .wrapper_e131a9:has(.container_e131a9) {
+    border-bottom: none;
+}
+
+/* Voice chat button */
+.visual-refresh .button_e131a9.buttonColor_e131a9.buttonColor_e131a9 {
+    background: rgba(255, 255, 255, 0.089);
+}
+
+/* In voice chat streaming button */
+.visual-refresh .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
+    background: hsl(from var(--success-color) h s l / 0.4);
+    color: var(--button-secondary-text);
+    border-color: hsl(from var(--success-color) h s l / 0.5);
+}
+
+/* --------------------- Global --------------------- */
+
+/* Chat panel border */
+.visual-refresh .page_c48ade {
+    background: var(--chat-darkness);
+    border-radius: 0;
+    border: none;
+}
+
+
+/* --------------------- Top --------------------- */
+
+/* Chat header */
+.visual-refresh .title_f75fb0 {
+    background: var(--chatbar-darkness);
+    border-radius: 0; 
+    border-bottom: var(--border);
+}
+
+/* Friends page header */
+.container__9293f {
+  background: var(--friendsbar-darkness) !important;
+  border-bottom: var(--border) !important;
+}
+
+/* --------------------- Forum --------------------- */
+
+/* Thread border */
+.visual-refresh .container__01ae2 {
+    background: var(--chat-darkness);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: var(--border);
+}
+
+/* Chat border */
+.visual-refresh .chat_f75fb0.threadSidebarOpen_f75fb0 {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: var(--border);
+}
+
+/* --------------------- Profile Popout --------------------- */
+
+/* Remove Guild Tag Banner */
+.banner__86ab2 {
+    background: transparent !important;
+}
+
+/* User pop up remove banner for non-nitro users*/
+/* :where(.banner__68edb:not([style*="background-image"])) {
+    background: none !important;
+} */
+
+/* Gradient top banner for non-nitro only */
+/* Need to keep banner on top for it to work.... */
+.outer_c0bea0:not(.custom-user-profile-theme) .inner_c0bea0 .mask__68edb {
+    mask: linear-gradient(black -5%, 0%, transparent);
+}
+
+/* Remove outer padding + remove custom nitro background for nitro user */
+.outer_c0bea0.custom-user-profile-theme {
+    padding: 0;
+    background: none;
+}
+
+/* Shading user pop for non-nitro user */
+.outer_c0bea0:not(.custom-user-profile-theme) {
+    background: var(--profile-darkness);
+    border-left: var(--border);
+}
+
+.fullscreenOnMobile__49fc1 .outer_c0bea0:not(.custom-user-profile-theme) {
+    background: var(--profile-darkness);
+    border-left: var(--border);
+} 
+
+
+.animatorRight_faf9c0 .outer_c0bea0:not(.custom-user-profile-theme) {
+    background: var(--profile-darkness);
+    border-left: var(--border);
+} 
+
+/* This is something fun.....  */
+.outer_c0bea0 .inner_c0bea0 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--user-popout-image) no-repeat center center / cover !important;
+    background-position: center calc(100% + 100px) !important;
+} 
+
+/* Transparent user pop */
+.user-profile-popout:not(.custom-user-profile-theme)::before {
+    background: var(--userpanel-darkness);
+}
+
+/* --------------------- Friends Activity --------------------- */
+
+.nowPlayingColumn__133bf {
+  background: var(--activity-darkness);
+  border-left: var(--border);
+}
+
+/* --------------------- Member List --------------------- */
+
+.visual-refresh .membersWrap_c8ffbb {
+    background: var(--memberlist-darkness);
+    border-left: var(--border);
+}

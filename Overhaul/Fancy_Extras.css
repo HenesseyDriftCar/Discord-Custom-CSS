@@ -1,0 +1,109 @@
+/* Server folder border */
+.isExpanded__48112 .folderGroupBackground__48112 {
+    opacity: 1;
+    border: 2px solid;
+    border-color: var(--main-color);
+}
+
+/* User activity color */
+.overflow__82b15 strong {
+  color: var(--main-color);
+}
+
+/* Transparent Folders Left */
+/* BY UNKNOWN IN UNKNOWN */
+.folderPreview__48112 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  height: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+  width: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+  align-items: center;
+  justify-content: center;
+}
+.expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
+    scale: 10;
+}
+.expandedFolderIconWrapper__48112::after,
+.folderPreview__48112::after {
+    content: "";
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
+}
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+    opacity: 1;
+    filter: blur(1px);
+}
+.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+    background-color: #000000;
+}
+.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+    background-color: #747474;
+}
+
+/* SCROLLABLE/COMPACT CODEBLOCKS // BY BALD IN VENCORD SERVER */
+
+:root {
+  --codeblock-height: 200px;
+}
+.codeContainer__75297 > code {
+  max-height: var(--codeblock-height);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+    &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
+     visibility: hidden; 
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scrollbar-thin-thumb);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    min-height: 40px;
+  }
+  &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-thin-track);
+    border: 2px solid var(--scrollbar-thin-track);
+    border-color: var(--scrollbar-thin-track);
+  }
+}
+
+/* DETAILED TIMESTAMPS // BY KREKEVYKS.JS IN VENCORD SERVER */
+
+span[class*="timestampInline_"] time::before {
+  content: attr(aria-label);
+  font-size: 12px;
+}
+
+span[class*="timestampInline_"] {
+  font-size: 0px !important;
+}
+
+/* status based activity icon  // BY DER TRAUDEL IN VENCORD SERVER */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg>path[fill="#43a25a"] {
+    fill: #43b581;
+}
+
+[class^=memberInner]:has(> div > [aria-label*="Idle"]) [class^=subText] svg>path[fill="#43a25a"] {
+    fill: #f0b232;
+}
+
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#43a25a"] {
+    fill: #f23f43;
+}
+
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg>path[fill="#43a25a"] {
+    fill: #643da7;
+}
