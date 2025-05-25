@@ -7,6 +7,11 @@
   border-bottom: var(--border);
 }
 
+/* Inbox popout */
+.scroller__2692d, .visual-refresh .header__45690, .visual-refresh .footer__45690 {
+  background: var(--inbox-darkness);
+}
+
 /* --------------------- Server List --------------------- */
 
 .visual-refresh .guilds_c48ade {
@@ -196,6 +201,11 @@ nav.guilds_c48ade {
 /* Transparent user pop */
 .user-profile-popout:not(.custom-user-profile-theme)::before {
     background: var(--userpanel-darkness);
+}
+
+/* Account switcher panel */
+.scrollerBase_d125d2 {
+  background: var(--inbox-darkness);
 }
 
 /* --------------------- Friends Activity --------------------- */
