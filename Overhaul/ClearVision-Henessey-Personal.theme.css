@@ -61,6 +61,7 @@
     --friendsbar-darkness: rgba(0, 0, 0, 0.4); /* Darkness of the bar at the top of friends page */
     --chatbar-darkness: rgba(0, 0, 0, 0.4); /* Darkness of the bar at the top of the chat area */
     --topbar-darkness: rgba(0, 0, 0, 0.6); /* Top bar transparency */
+    --inbox-darkness: rgba(0, 0, 0, 0.25); /* Darkness of the inbox popout and account switcher panel */
     /* HOME ICON */
     --home-icon: url(https://i.imgur.com/jTuagxP.png); /* Change to the image link of your choice of home icon */
     --home-size: cover; /* home button icon size (px) [default:cover] */
