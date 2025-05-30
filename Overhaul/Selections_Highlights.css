@@ -1,16 +1,16 @@
 /* Selected channel */
 .wrapper__2ea32.modeSelected__2ea32 .link__2ea32::before {
-    background: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
 }
 
 /* Selected Interactive in DM */
 .visual-refresh .interactive__972a0.interactiveSelected__972a0::before {
-    background: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
 }
 
 /* New Voice Chat Version */
 .content__07f91:has(.usernameSpeaking__07f91, .avatarSpeaking__07f91) {
-    background: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
     padding-top: 4px;
     padding-bottom: 4px;
     border-top-left-radius: 15px;
@@ -48,7 +48,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background-image: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
     z-index: -1;
     opacity: .5;
     border-radius: 4px;
@@ -69,7 +69,7 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background-image: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
     z-index: -1;
     opacity: .3;
     border-radius: 4px;
@@ -87,7 +87,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background-image: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
     opacity: 0;
     border-radius: 4px;
     z-index: -1;
@@ -100,7 +100,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(to right, var(--hsl-main-color), transparent 160%);
+    background-image: linear-gradient(to right, var(--hsl-main-color) -40%, transparent 160%);
     opacity: 0.3;
     border-radius: 4px;
     z-index: -1;
