@@ -26,8 +26,8 @@
 /* SETTINGS */
 :root {
     /* ACCENT COLORS */
-    --main-color: rgb(39, 128, 230);
-    --hover-color: rgb(30, 98, 175);
+    --main-color: rgb(26, 126, 240);
+    --hover-color: rgb(12, 96, 192);
     --success-color: hsl(106, 100%, 50%);
     --danger-color: hsl(0, 75%, 46%);
     /* STATUS COLORS */
