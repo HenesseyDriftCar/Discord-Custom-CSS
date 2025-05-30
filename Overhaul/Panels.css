@@ -192,12 +192,6 @@ nav.guilds_c48ade {
     border-left: var(--border);
 } 
 
-/* This is something fun.....  */
-.outer_c0bea0 .inner_c0bea0 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--user-popout-image) no-repeat center center / cover !important;
-    background-position: center calc(100% + 100px) !important;
-} 
-
 /* Transparent user pop */
 .user-profile-popout:not(.custom-user-profile-theme)::before {
     background: var(--userpanel-darkness);
