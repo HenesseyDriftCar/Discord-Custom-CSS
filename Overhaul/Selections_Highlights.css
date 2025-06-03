@@ -150,3 +150,20 @@
 .nameContainer__703b9:has(.twoColorGradient_e5de78):after {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent) !important;
 }
+
+/* Hover blur */
+/* Friend in friend list */
+.full-motion.visual-refresh .peopleListItem_cc6179:hover {
+    backdrop-filter: var(--hover-blur);
+}
+
+/* Message */
+.message__5126c:hover {
+    background: linear-gradient(to right, var(--hsl-main-color) -80%, transparent 140%) !important;
+    backdrop-filter: var(--hover-blur);
+}
+
+/* DM list and channel */
+.wrapper__2ea32:hover .link__2ea32, .channel__972a0:hover {
+  backdrop-filter: var(--hover-blur);
+}
