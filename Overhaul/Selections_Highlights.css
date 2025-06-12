@@ -1,3 +1,9 @@
+/* Makes hover highlight match selected highlight shape */
+.visual-refresh .interactive__972a0, .wrapper__2ea32 .link__2ea32, .channel__972a0 {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
 /* Selected channel */
 .wrapper__2ea32.modeSelected__2ea32 .link__2ea32::before {
     background: linear-gradient(to right, var(--hsl-main-color) , transparent);
@@ -10,12 +16,6 @@
     background: linear-gradient(to right, var(--hsl-main-color), transparent);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-}
-
-/* Makes hover highlight match selected highlight shape */
-.visual-refresh .interactive__972a0, .wrapper__2ea32 .link__2ea32, .channel__972a0 {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 
 /* New Voice Chat Version */
