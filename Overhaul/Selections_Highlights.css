@@ -1,11 +1,15 @@
 /* Selected channel */
 .wrapper__2ea32.modeSelected__2ea32 .link__2ea32::before {
     background: linear-gradient(to right, var(--hsl-main-color) , transparent);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 /* Selected Interactive in DM */
 .visual-refresh .interactive__972a0.interactiveSelected__972a0::before {
     background: linear-gradient(to right, var(--hsl-main-color), transparent);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 /* New Voice Chat Version */
