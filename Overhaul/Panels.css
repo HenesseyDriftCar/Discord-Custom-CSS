@@ -60,7 +60,7 @@
 .density-cozy .panels_c48ade {
     left: auto !important;
     right: 0;
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)) !important;
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 0px) !important;
 }
 
 /* USER PANEL */
