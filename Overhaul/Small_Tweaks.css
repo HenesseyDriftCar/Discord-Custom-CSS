@@ -82,3 +82,33 @@
 .footerContent__083ae {
     background: none;
 }
+
+/* status based activity icon */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=link__972a0]:has([aria-label*="Online"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=userInfo__0a06e]:has([aria-label*="Online"]) [class^=subtext] svg>path[fill="#43a25a"], 
+[class^=avatarWrapper__37e49]:has([aria-label*="Online"]) [class*=subtext] svg>path[fill="#43a25a"] {
+    fill: #43b581;
+}
+
+
+[class^=memberInner]:has(> div > [aria-label*="Idle"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=link__972a0]:has([aria-label*="Idle"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=userInfo__0a06e]:has([aria-label*="Idle"]) [class^=subtext] svg>path[fill="#43a25a"], 
+[class^=avatarWrapper__37e49]:has([aria-label*="Idle"]) [class*=subtext] svg>path[fill="#43a25a"] {
+    fill: #f0b232;
+}
+
+[class^=memberInner]:has([aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=link__972a0]:has([aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=userInfo__0a06e]:has([aria-label*="Do Not Disturb"]) [class^=subtext] svg>path[fill="#43a25a"], 
+[class^=avatarWrapper__37e49]:has([aria-label*="Do Not Disturb"]) [class*=subtext] svg>path[fill="#43a25a"] {
+    fill: #f23f43;
+}
+
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=icon] svg>path[fill="#43a25a"], 
+[class^=link__972a0]:has([aria-label*="Streaming"]) [class^=subText] svg>path[fill="#43a25a"], 
+[class^=userInfo__0a06e]:has([aria-label*="Streaming"]) [class^=subtext] svg>path[fill="#43a25a"], 
+[class^=avatarWrapper__37e49]:has([aria-label*="Streaming"]) [class*=subtext] svg>path[fill="#43a25a"] {
+    fill: #643da7;
+}
