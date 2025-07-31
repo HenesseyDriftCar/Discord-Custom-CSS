@@ -1,4 +1,4 @@
-/* Better typing area */
+/* Better typing area 
 .typing_b88801 {
   top: calc(0px - var(--space-24));
   left: 0 !important;
@@ -37,7 +37,7 @@
 .spoilerMarkdownContent__54ab5,
 .hidden__54ab5 {
     background: rgba(0, 0, 0, 1) !important;
-    padding: 5px;
+    padding: 2px;
     border-radius: 10px;
 }
 
