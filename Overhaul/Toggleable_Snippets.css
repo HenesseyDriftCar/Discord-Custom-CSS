@@ -1,0 +1,307 @@
+/* Rounds the left hand border of channels and DMs */
+@property --channel-radius {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--channel-radius: on) {
+  .visual-refresh .interactive__972a0, .wrapper__2ea32, .link__2ea32, .channel__972a0, /* DM/channel hover */
+  .wrapper__2ea32.modeSelected__2ea32, .link__2ea32::before, /* Selected channel */
+  .visual-refresh .interactive__972a0.interactiveSelected__972a0::before /* Selected DM */ {
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+  }
+}
+
+/* Selected channels and DMs have a gradient using your theme's main colour (midnight and clearvision compat) */
+@property --gradient-select {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--gradient-select: on) {
+    .wrapper__2ea32.modeSelected__2ea32 .link__2ea32::before,
+    .visual-refresh .interactive__972a0.interactiveSelected__972a0::before {
+        background: linear-gradient(to right, var(--hsl-main-color) , transparent);
+        background: linear-gradient(to right, var(--accent-1) , transparent);        
+    }
+}
+
+/* Makes active speaker in VC look like selected channel/DM (midnight and clearvision compat) */
+@property --fancy-voicechat {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--fancy-voicechat: on) {
+    .content__07f91:has(.usernameSpeaking__07f91, .avatarSpeaking__07f91) {
+        background: linear-gradient(to right, var(--hsl-main-color), transparent);
+        background: linear-gradient(to right, var(--accent-1), transparent);
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transition: background 1s ease;
+    }
+}
+
+/* Hovered message background is a translucent gradient with theme's main colour (midnight and clearvision compat) */
+@property --message-hover {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--message-hover: on) {
+    .message__5126c:hover {
+        background: linear-gradient(to right, var(--hsl-main-color) -80%, transparent 140%) !important;
+        background: linear-gradient(to right, var(--accent-1) -80%, transparent 140%) !important;
+    }
+}
+
+/* Hides home icon and unread DM indicators to look better with server columns */
+@property --hide-indicators {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--hide-indicators: on) {
+  .wrapper_ef3116 .pill__1f388, .wrapper_ef3116 .pill__66ac8, .wrapper_ef3116 .pill_ed9a5f {
+  display: none;
+  }
+}
+
+/* Makes server icons circular */
+@property --circular-servers {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--circular-servers: on) {
+  .wrapper__6e9f8 {
+    border-radius: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Activity icons match status colours - eg dnd = red icon, idle = yellow icon */
+@property --status-activity-icons {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--status-activity-icons: on) {
+    [class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=link__972a0]:has([aria-label*="Online"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=userInfo__0a06e]:has([aria-label*="Online"]) [class^=subtext] svg>path[fill="#43a25a"], 
+    [class^=avatarWrapper__37e49]:has([aria-label*="Online"]) [class*=subtext] svg>path[fill="#43a25a"] {
+        fill: var(--online-color);
+        fill: var(--online);
+    }
+
+
+    [class^=memberInner]:has(> div > [aria-label*="Idle"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=link__972a0]:has([aria-label*="Idle"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=userInfo__0a06e]:has([aria-label*="Idle"]) [class^=subtext] svg>path[fill="#43a25a"], 
+    [class^=avatarWrapper__37e49]:has([aria-label*="Idle"]) [class*=subtext] svg>path[fill="#43a25a"] {
+        fill: var(--idle-color);
+        fill: var(--idle);
+    }
+
+    [class^=memberInner]:has([aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=link__972a0]:has([aria-label*="Do Not Disturb"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=userInfo__0a06e]:has([aria-label*="Do Not Disturb"]) [class^=subtext] svg>path[fill="#43a25a"], 
+    [class^=avatarWrapper__37e49]:has([aria-label*="Do Not Disturb"]) [class*=subtext] svg>path[fill="#43a25a"] {
+        fill: var(--dnd-color);
+        fill: var(--dnd);
+    }
+
+    [class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=icon] svg>path[fill="#43a25a"], 
+    [class^=link__972a0]:has([aria-label*="Streaming"]) [class^=subText] svg>path[fill="#43a25a"], 
+    [class^=userInfo__0a06e]:has([aria-label*="Streaming"]) [class^=subtext] svg>path[fill="#43a25a"], 
+    [class^=avatarWrapper__37e49]:has([aria-label*="Streaming"]) [class*=subtext] svg>path[fill="#43a25a"] {
+        fill: var(--streaming-color);
+        fill: var(--streaming);
+    }
+}
+
+/* Makes usernames in chat bold */
+@property --bold-usernames {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--bold-usernames: on) {
+    .username_c19a55,
+    .markup__75297 strong {
+        font-weight: 900;
+    }
+}
+
+/* Expanded server folder borders match theme's main colour */
+@property --folder-borders {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--folder-border: on) {
+    /* Server folder border */
+    .isExpanded__48112 .folderGroupBackground__48112 {
+        opacity: 1;
+        border: 2px solid;
+        border-color: var(--main-color);
+        border-color: var(--accent-1);
+    }
+}
+
+/* Fancy server folder icon */
+@property --fancy-folder {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--fancy-folder: on) {
+    .folderPreview__48112 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    height: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+    width: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+    align-items: center;
+    justify-content: center;
+    }
+    .expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
+        scale: 10;
+    }
+    .expandedFolderIconWrapper__48112::after,
+    .folderPreview__48112::after {
+        content: "";
+        background-color: #ffffff;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
+    }
+    .folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+        opacity: 1;
+        filter: blur(1px);
+    }
+    .theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+        background-color: #000000;
+    }
+    .theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+        background-color: #747474;
+    }
+}
+
+/* Activity colour uses theme's main colour (midnight) */
+@property --activity-colour {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--activity-colour: on) {
+    .truncated_c9d15c strong {
+        color: var(--accent-1);
+    }
+}
+
+/* Makes codeblocks scrollable instead of taking up a ton of space in chat */
+@property --scrollable-codeblocks {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--scrollable-codeblocks: on) {
+    .codeContainer__75297 > code {
+    max-height: var(--codeblock-height);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+        &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
+        visibility: hidden; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background-clip: padding-box;
+        background-color: var(--scrollbar-thin-thumb);
+        border: 2px solid transparent;
+        border-radius: 4px;
+        min-height: 40px;
+    }
+    &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: var(--scrollbar-thin-track);
+        border: 2px solid var(--scrollbar-thin-track);
+        border-color: var(--scrollbar-thin-track);
+    }
+    }
+}
+
+/* Better timestamps */
+@property --fancy-timestamps {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--fancy-timestamps: on) {
+    span[class*="timestampInline_"] time::before {
+    content: attr(aria-label);
+    font-size: 12px;
+    }
+
+    span[class*="timestampInline_"] {
+    font-size: 0px !important;
+    }
+}
+
+/* Collapses server tags to only the icon, which expands when hovered */
+@property --collapsible-tags {
+    syntax: 'off | on';
+    inherits: false;
+    initial-value: on;
+}
+@container body style(--collapsible-tags: on) {
+    .chipletContainerInner__10651 > .text__10651 > .tagText__10651 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    will-change: max-width, margin;
+    transition: max-width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                margin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .chipletContainerInner__10651:hover > .text__10651 > .tagText__10651 {
+    max-width: 20ch;
+    margin-right: .3ch;
+    transition-delay: 0.08s;
+    }
+    .chipletContainerInner__10651 > .text__10651 > img.badge__10651 {
+    margin-right: 0;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                margin 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .chipletContainerInner__10651:hover > span > img.badge__10651 {
+    transform: rotateZ(360deg);
+    margin-right: .6ch;
+    transition-delay: 0.08s;
+    }
+    .chipletContainerInner__10651 {
+    position: relative;
+    display: inline-block;
+    background-color: var(--background-mod-subtle);
+    padding: 0 2px;
+    margin-left: 0;
+    }
+    .chipletContainerInner__10651:hover ~ .tagText__10651 {
+    display: block;
+    clear: both;
+    margin-top: .5ch;
+    }
+}
